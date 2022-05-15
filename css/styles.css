@@ -24,9 +24,6 @@
 body {
     color: var(--second);
     background-color: var(--primar);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 header, footer {
