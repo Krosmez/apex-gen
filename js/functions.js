@@ -51,3 +51,24 @@ function showCharacter(data) {
         response[i].textContent = result[i];
     }
 }
+
+function swicthColors(input, label) {
+    !input.checked ?
+        label.style.backgroundColor = colors.red
+        :
+        label.style.backgroundColor = colors.green
+}
+
+function initColors() {
+    const labels = document.querySelectorAll('label')
+    const inputs = document.querySelectorAll('.input-selection')
+
+    for (let i = 0; i < labels.length; i++) {
+
+        if (!inputs[i].checked) {
+            labels[i].style.backgroundColor = colors.red;
+        } else {
+            labels[i].style.backgroundColor = colors.green;
+        }
+    }
+}

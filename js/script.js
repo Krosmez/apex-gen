@@ -9,3 +9,4 @@ if (savedLegends) {
 createRepeat();
 createRandomiser();
 createResult();
+initColors();
