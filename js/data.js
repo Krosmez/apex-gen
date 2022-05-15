@@ -23,7 +23,6 @@ const Characters = {
 
 }
 
-
 const colors = {
     "red": '#B71C1C',
     "green": '#2E7D32',
