@@ -1,8 +1,7 @@
 const savedLegends = localStorage.getItem('savedLegends');
 
-
 if (savedLegends) {
-    savedLegends !== Characters ?
+    Object.keys(JSON.parse(savedLegends)).length !== Object.keys(JSON.parse(Characters)).length ?
         createHero(Characters)
         :
         createHero(JSON.parse(savedLegends))
