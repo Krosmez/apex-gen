@@ -20,6 +20,7 @@ const Characters = {
     "Ash": true,
     "Mad Maggie": true,
     "New Castle": true,
+    "Vantage": true,
 
 }
 
