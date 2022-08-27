@@ -8,7 +8,7 @@ const Characters = {
     "Caustic": true,
     "Mirage": true,
     "Octane": true,
-    "Wattson": false,
+    "Wattson": true,
     "Crypto": true,
     "Revenant": true,
     "Loba": true,
@@ -25,6 +25,10 @@ const Characters = {
 }
 
 const colors = {
-    "red": '#B71C1C',
+    "primar": "",
+    "second": "",
+    "terce": "",
+    "quadra": "",
     "green": '#2E7D32',
+    "red": '#B71C1C',
 }

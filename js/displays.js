@@ -67,9 +67,9 @@ function createRepeat() {
         decrementResult();
     })
 
-    section.appendChild(incrementBtn)
-    section.appendChild(div)
     section.appendChild(decrementBtn)
+    section.appendChild(div)
+    section.appendChild(incrementBtn)
     insertAfter(section, root.lastElementChild)
 }
 

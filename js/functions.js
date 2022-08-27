@@ -20,7 +20,6 @@ function decrementResult() {
 
     const resultSection = document.getElementById('result-ctn');
     const p = document.getElementById(`result-${divRepeat.textContent}`);
-    setTimeout(() => { p.style.maxWidth = '0%' }, 10)
     divRepeat.textContent--;
     resultSection.removeChild(p);
 }
