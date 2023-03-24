@@ -5,6 +5,7 @@
     --quadra: #BB86FC;
     --green: #2E7D32;
     --red: #B71C1C;
+    --test: calc(50px - 2px);
 }
 
 .container {
@@ -26,26 +27,48 @@ body {
     background-color: var(--primar);
 }
 
-header, footer {
+header,
+footer {
+    padding: 20px;
     background-color: var(--terce);
 }
 
-label, .result {
+label,
+.result {
     font-size: 1em;
     justify-content: space-between;
     align-items: center;
 }
 
-header, label, .div-repeat, .repeat-btn, .btn, .result {
+header,
+label,
+.div-repeat,
+.repeat-btn,
+.btn,
+.result {
+    margin-bottom: 10px;
+}
+
+label,
+.div-repeat,
+.repeat-btn,
+.btn,
+.result {
     padding: 10px;
     margin-bottom: 10px;
 }
 
-label, .result, .div-repeat, .repeat-btn, .btn {
+label,
+.result,
+.div-repeat,
+.repeat-btn,
+.btn {
     border-radius: 5px;
 }
 
-header, .div-repeat, .result {
+header,
+.div-repeat,
+.result {
     text-align: center;
 }
 
@@ -156,6 +179,24 @@ input[type=checkbox]:checked {
     transition: max-width .6s;
 }
 
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.color-item {
+    flex: max(100px, 100%/2 - 30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color-item:nth-child(even) {
+    padding-left: 10px;
+    border-left: 2px solid var(--second);
+}
+
 @media (min-width:67.5em) {
 
     .div-repeat,
@@ -168,7 +209,8 @@ input[type=checkbox]:checked {
         flex: max(100px, 100%/4 - 10px);
     }
 
-    label, .result {
+    label,
+    .result {
         font-size: 1.2em;
     }
 
