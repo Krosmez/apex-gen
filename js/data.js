@@ -22,6 +22,7 @@ const Characters = {
   "New Castle": true,
   Vantage: true,
   Catalyst: true,
+  Ballistic: true,
 };
 
 const colors = {
